@@ -45,6 +45,21 @@ item $i$ that indicates whether the item is in the knapsack ($x_i=1$) or not
 _You can write your answer directly in this markdown file or refer to a separate
 file here._
 
+$$\max \sum_{i \in I} v_i \sum_{j \ in K} x_{ij}$$
+
+$$\text{s.t.} \sum_{i \in I} \sum_{j \ in K} w_i x_{ij} \leq C_{j}$$
+
+$$\forall i \in I : \sum_{j \in K} b_{ij} \leg C_{j}$$
+
+$$\text{with} b_{i} = (b_{1}, ..., b_{k} )$$ 
+
+$$\text{and}  \[ b_{ij} =
+  \begin{cases}
+    1       \text{if item} i \text{ is in} k_{j}\\
+    0   \text{if item} i \text{ is not in} k_{j}
+  \end{cases}
+\]$$
+
 <!-- ADD YOUR ANSWER HERE -->
 
 ### Implementation of a Solver in CP-SAT
